@@ -1,0 +1,8 @@
+[
+  {"model": "status_checker.url", "pk": 1, "fields": {"user": 1, "url": "https://mail.yandex.ru/", "status_code": null, "check_status": false}},
+  {"model": "status_checker.url", "pk": 2, "fields": {"user": 2, "url": "https://ok.ru/video/393292417776", "status_code": null, "check_status": true}},
+  {"model": "status_checker.url", "pk": 3, "fields": {"user": 1, "url": "https://mail.yan", "status_code": null, "check_status": true}},
+  {"model": "status_checker.url", "pk": 4, "fields": {"user": 1, "url": "https://istina.msu.ru/", "status_code": null, "check_status": false}},
+  {"model": "status_checker.url", "pk": 5, "fields": {"user": 1, "url": "https://www.google.com/", "status_code": null, "check_status": true}},
+  {"model": "status_checker.url", "pk": 6, "fields": {"user": 2, "url": "https://www.goowgle.comd/", "status_code": null, "check_status": false}}
+]

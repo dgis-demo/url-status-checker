@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="hero is-primary is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                URL Status Checker
+            </h1>
+
+            <p class="subitlte">
+                {% if not user.is_authenticated %}
+                    <a href="/accounts/logout/">Logout</a>
+                {% endif %}
+            </p>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <h2 class="subtitle">
+            <div class="field has-addons">
+                <div class="control">
+                    <input class="input" type="text" placeholder="Type a number">
+                </div>
+                <div class="control">
+                    <a class="button is-info">
+                    Set interval
+                    </a>
+                </div>
+            </div>
+            <button class="button is-primary is-outlined" id="check_status" onclick="check_status()">Check
+                Status
+            </button>
+        </h2>
+        <hr>
+        <div class="table-container">
+            <table class="table is-striped is-narrow is-hoverable is-fullwidth">
+                <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>URL</td>
+                    <td>Check Status</td>
+                    <td>Status Code</td>
+                </tr>
+                </thead>
+                <tbody id="table_body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+{% endblock %}
